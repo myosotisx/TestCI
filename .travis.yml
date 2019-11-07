@@ -7,9 +7,9 @@ sudo: required
 addons:
   apt:
     packages:
-    - mysql-server-8.0.16
-    - mysql-client-core-8.0.16
-    - mysql-client-8.0.16
+    - mysql-server-5.7
+    - mysql-client-core-5.7
+    - mysql-client-5.7
 before_install: 
 - cd thutickets
 - chmod +x ./mvnw
