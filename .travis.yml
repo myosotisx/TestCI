@@ -1,7 +1,7 @@
 language: java
 jdk: oraclejdk13
 sudo: true
-service: mysql
+services: mysql
 dist: xenial
 sudo: required
 before_install: 
