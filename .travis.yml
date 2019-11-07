@@ -9,7 +9,5 @@ before_install:
 - chmod +x ./mvnw
 before_build: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 before_script:
-- mysql -u root -e "CREATE DATABASE thutickets;"
-- mysql -u root -e "USE thutickets;"
-- mysql -u root -e "CREATE TABLE user (openid varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'openid');"
+- mysql -u root -e "CREATE DATABASE thutickets; USE thutickets; CREATE TABLE user (openid varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'openid');"
 script: mvn test
