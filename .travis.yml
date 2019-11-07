@@ -1,5 +1,6 @@
 language: java
 jdk: oraclejdk13
+sudo: true
 service: mysql
 dist: trusty
 sudo: required
@@ -9,7 +10,6 @@ addons:
     - mysql-server-8.0.16
     - mysql-client-core-8.0.16
     - mysql-client-8.0.16
-sudo: true
 before_install: 
 - cd thutickets
 - chmod +x ./mvnw
